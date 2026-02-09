@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | Mathi's Secret Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Logo Section */
+        header {
+            background-color:  #c9ca65;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+        }
+
+        /* Register Box */
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .register-box {
+            width: 380px;
+            border: 1px solid #e0e0e0;
+            padding: 25px;
+        }
+
+        .register-box h2 {
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .register-box p {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #134b28;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            text-decoration: none;
+            color: #04638f;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <header>
+        <img src="../images/logo.png" alt="Mathi's Secret Store Logo">
+    </header>
+
+    <!-- Register Section -->
+    <main>
+        <section class="register-box">
+
+            <h2>SIGN UP</h2>
+            <p>Please fill in the information below:</p>
+
+            <form action="#" method="post">
+
+                <input type="text" placeholder="First name" required>
+
+                <input type="text" placeholder="Last name" required>
+
+                <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" required>
+
+                <input type="email" placeholder="E-mail" required>
+
+                <input type="password" placeholder="Password" minlength="6" required>
+
+                <button type="submit">CREATE ACCOUNT</button>
+
+            </form>
+
+            <div class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Mathi's Secret Store
+    </footer>
+
+</body>
+</html>
